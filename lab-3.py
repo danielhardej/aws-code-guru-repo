@@ -24,7 +24,7 @@ def upload_output_to_S3(log_file_name):
     with open(log_file_name, 'rb') as file:
         # not needed as with open() used
         # file = open(log_file_name, "rb")
-        s3.upload_fileobj(file, "<FMI1>", log_file_name)
+        s3.upload_fileobj(file, "dans-codeguru-test-bucket-4121", log_file_name)
         file.close()
 
 if __name__ == "__main__":
