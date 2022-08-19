@@ -2,6 +2,8 @@
 
 Repo for integrating AWS CodeGuru to GitHub to complete the exercises that are part of the Improve Your Python Code Using Amazon CodeGuru course.
 
+Part of the Modern Application Development with Python on AWS Specialization.
+
 ### About this Course
 In this course we learn how to use Amazon CodeGuru Reviewer to automatically identify issues and vulnerabilities to improve your code quality and improve Python Code using Amazon CodeGuru.
 
