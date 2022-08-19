@@ -12,7 +12,7 @@ def main(argv):
     upload_output_to_S3(log_file_name)
 
 def kickoff_subprocess(cmd, log_file_name):
-    process = subprocess.call(cmd, shell=False)
+    process = subprocess.call(['cmd', '/c'], shell=False)
     # not needed as with open() used
     # file = open(log_file_name, "a+")
     with open(log_file_name, 'a+') as file:
