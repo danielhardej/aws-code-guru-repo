@@ -3,9 +3,7 @@ import sys
 import boto3
 import datetime
 
-ACCESS_ID = input("Enter acccess ID: ")
-ACCESS_KEY = input("Enter access key: ")
-s3 = boto3.client('s3', aws_access_key_id=ACCESS_ID, aws_secret_access_key= ACCESS_KEY)
+s3 = boto3.client('s3')
 
 def main(argv):
     cmd = determine_command(int(sys.argv[1]))
